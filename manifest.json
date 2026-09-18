@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Cookie Cleaner (local)",
+  "version": "1.0.0",
+  "description": "Clear specific cookies for the current site with one click. Local, no network access.",
+  "permissions": ["cookies", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Cookie Cleaner",
+    "default_popup": "popup.html"
+  }
+}

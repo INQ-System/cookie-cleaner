@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: system-ui, sans-serif; width: 340px; margin: 0; padding: 12px; font-size: 13px; }
+    h1 { font-size: 14px; margin: 0 0 8px; }
+    #site { color: #555; font-size: 12px; margin-bottom: 10px; word-break: break-all; }
+    ul { list-style: none; margin: 0; padding: 0; max-height: 320px; overflow-y: auto; }
+    li { display: flex; align-items: center; justify-content: space-between;
+         gap: 8px; padding: 6px 4px; border-bottom: 1px solid #eee; }
+    .name { font-family: monospace; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+    button { cursor: pointer; border: 1px solid #ccc; background: #fafafa; border-radius: 4px; padding: 3px 8px; font-size: 12px; }
+    button:hover { background: #f0f0f0; }
+    .del { color: #b00; border-color: #e0b4b4; }
+    #clearAll { width: 100%; margin-top: 10px; padding: 7px; color: #b00; border-color: #e0b4b4; }
+    #empty { color: #888; padding: 8px 4px; }
+  </style>
+</head>
+<body>
+  <h1>Cookies for this site</h1>
+  <div id="site"></div>
+  <ul id="list"></ul>
+  <div id="empty" hidden>No cookies for this site.</div>
+  <button id="clearAll">Delete all cookies for this site</button>
+  <script src="popup.js"></script>
+</body>
+</html>
